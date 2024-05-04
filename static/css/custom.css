@@ -1,1 +1,29 @@
-/* Override this file to customise the theme's CSS for your site */
+img {
+    margin-bottom: 0.5rem;
+}
+
+div.padding {
+    margin-bottom: 1rem;
+}
+
+a:hover > img {
+    filter: brightness(0.8);
+}
+
+.secondary {
+    color: var(--muted);
+}
+
+html {
+  min-height: calc(100% - 2 * 3px);
+  border: 3px solid var(--brand);
+}
+
+/* used in the blog listings */
+b.favourite > a::before {
+    content: "⭐ ";
+}
+
+img.border {
+    border: 1px solid var(--off-fg);
+}
