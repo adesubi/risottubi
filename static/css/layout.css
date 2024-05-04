@@ -4,7 +4,7 @@
     max-width: 64rem;
     margin: 1rem auto;
     display: grid;
-    grid-template-areas:
+    grid-template-areas: 
       "header"
       "body"
       "aside"
@@ -15,6 +15,13 @@
 
 @media (min-width: 45rem) {
     .page {
+        grid-template-areas:
+          "header"
+          "body"
+          "footer";
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .page.with-aside {
         grid-template-areas:
           "header  header"
           "body    aside"
@@ -49,11 +56,6 @@
 .page__aside {
     grid-area: aside;
     color: var(--off-fg);
-    position: sticky;
-    top: 1rem;
-    right: 1rem;
-    overflow-y: auto;
-    max-height: 95vh;
 }
 
 /* Footer */
