@@ -1,17 +1,21 @@
 :root {
+	--brand: #df3062;
+	
 	/* Background */
-	--bg: var(--base00);
-	--off-bg: var(--base01);
-	--inner-bg: var(--base02);
+	--bg: #e8e8e8;
+	--off-bg: #fafafa;
+	--inner-bg: #e0e0e0;
 
 	/* Text */
-	--fg: var(--base05);
-	--off-fg: var(--base04);
-	--muted: var(--base03);
-	--link: var(--base0D);
-	--hover: var(--base0C);
-	--highlight: var(--base0A);
+	--fg: #000; /* Main body */
+	--off-fg: #585858; /* Aside */
+	--muted: #585858;
+	--link: var(--brand);
+	--hover: #7f1c38;
+	/* --highlight: #f9b6c9; */
+	--highlight: var(--brand);
 
 	/* Logo */
-	--logo: var(--base0B);
+	--logo: var(--brand);
 }
+
